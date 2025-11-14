@@ -1,0 +1,5 @@
+.venv
+diagram.mmd
+__pycache__/
+*.pyc
+.env
