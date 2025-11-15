@@ -2,8 +2,6 @@ from dataclasses import dataclass
 import json
 from typing import Optional, List
 
-import boto3
-from botocore.config import Config
 
 @dataclass
 class Topic:

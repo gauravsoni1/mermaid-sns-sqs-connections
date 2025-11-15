@@ -4,8 +4,8 @@ import argparse
 from dataclasses import dataclass
 from typing import List, Optional, Set, Tuple
 
-from aws_helper import get_queue_dlq_arn, list_sns_topics , list_topic_subscriptions
-from mermaid_helper import format_filter_label, render_mermaid_diagram
+from .aws_helper import get_queue_dlq_arn, list_sns_topics , list_topic_subscriptions
+from .mermaid_helper import format_filter_label, render_mermaid_diagram
 
 import boto3
 
@@ -13,7 +13,6 @@ import boto3
 class CliArgs:
     region: str
     profile: Optional[str] = None
-    include_policy_edges: bool = False
     output: Optional[str] = None
     no_filters: bool = False
     no_dlq: bool = False

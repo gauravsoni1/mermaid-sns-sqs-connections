@@ -1,6 +1,5 @@
-from pydoc_data.topics import topics
-from typing import List, Tuple , Set
-from aws_helper import short_name_from_arn
+from typing import List, Tuple
+from .aws_helper import short_name_from_arn
 
 def mermaid_id_from_arn(arn: str) -> str:
     return (
